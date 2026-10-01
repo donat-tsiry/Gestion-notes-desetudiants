@@ -41,7 +41,7 @@ export default {
   methods: {
     async login() {
       try {
-        const res = await axios.post('http://localhost/etudiant-api/auth.php', this.form)
+        const res = await axios.post('/api/auth.php', this.form)
         if (res.data.success) {
           // Sauvegarder la session
           localStorage.setItem('auth', 'true')
