@@ -27,21 +27,49 @@ Frontend en Vue 3, API REST en PHP, base de données MySQL.
 
 ## Installation
 
-1. Cloner le dépôt
-       git clone https://github.com/donat-tsiry/Gestion-notes-desetudiants.git
-       cd Gestion-notes-desetudiants
-2. Créer la base de données : importer `database.sql` dans MySQL
-3. Configurer la connexion MySQL dans `etudiant-api` [nom du fichier]
-4. Lancer l'API PHP [par exemple avec XAMPP ou `php -S localhost:8000`]
-5. Installer et lancer le frontend
-       npm install
-       npm run dev
+### Prérequis
 
-## Captures d'écran
+- [XAMPP](https://www.apachefriends.org/) (Apache + MySQL)
+- [Node.js](https://nodejs.org/)
+- Git
 
-[Ajouter 2 ou 3 images dans un dossier `docs/` et les afficher ici]
+### Étapes
 
+1. Cloner le dépôt :
+
+```bash
+   git clone https://github.com/donat-tsiry/Gestion-notes-desetudiants.git
+   cd Gestion-notes-desetudiants
+```
+
+2. Démarrer **Apache** et **MySQL** depuis le panneau de contrôle XAMPP.
+
+3. Créer la base de données :
+   - ouvrir `http://localhost/phpmyadmin` ;
+   - importer le fichier `database.sql`.
+
+4. Copier le dossier `etudiant-api` dans `C:\xampp\htdocs\`.
+
+5. Vérifier la connexion MySQL dans `etudiant-api/config.php`
+   (par défaut sous XAMPP : utilisateur `root`, mot de passe vide).
+
+6. Installer et lancer le frontend :
+
+```bash
+   npm install
+   npm run dev
+```
+
+7. Ouvrir l'adresse affichée dans le terminal (en général `http://localhost:5173`).
+
+   ## Captures d'écran
+
+   ![Liste des étudiants](docs/formulaire.png)
+   ![Formulaire de saisie des notes](docs/ajout.png)
+   ![Page de connexion](docs/liste.png)
+   ![Page de connexion](docs/bilan.png)
 ## Auteur
 
-Donat Tsiry, étudiant à l'École nationale d'informatique (Madagascar)
+**Donat Tsiry**, étudiant à l'École nationale d'informatique (Fianarantsoa Madagascar)
+
 GitHub : [@donat-tsiry](https://github.com/donat-tsiry)
