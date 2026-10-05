@@ -1,44 +1,47 @@
-# etudiant-app
+# Gestion des notes des étudiants 📜
 
-This template should help get you started developing with Vue 3 in Vite.
+Application web (SPA) pour gérer les étudiants et leurs notes.
+Frontend en Vue 3, API REST en PHP, base de données MySQL.
 
-## Recommended IDE Setup
+## Fonctionnalités
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Ajouter, modifier et supprimer un étudiant]
+- [Saisir et consulter les notes]
+- [Diagramme pour la moyenne, le statut des notes des etudiants.]
 
-## Recommended Browser Setup
+## Technologies
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+| Partie | Technologie |
+|--------|-------------|
+| Frontend | Vue 3, Vite |
+| Backend | PHP (dossier `etudiant-api`) |
+| Base de données | MySQL |
+| Qualité du code | ESLint, Prettier |
 
-## Customize configuration
+## Structure du projet
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+    ├── src/            # code du frontend Vue
+    ├── public/         # fichiers statiques
+    ├── etudiant-api/   # API PHP
+    └── database.sql    # script de création de la base
 
-## Project Setup
+## Installation
 
-```sh
-npm install
-```
+1. Cloner le dépôt
+       git clone https://github.com/donat-tsiry/Gestion-notes-desetudiants.git
+       cd Gestion-notes-desetudiants
+2. Créer la base de données : importer `database.sql` dans MySQL
+3. Configurer la connexion MySQL dans `etudiant-api` [nom du fichier]
+4. Lancer l'API PHP [par exemple avec XAMPP ou `php -S localhost:8000`]
+5. Installer et lancer le frontend
+       npm install
+       npm run dev
 
-### Compile and Hot-Reload for Development
+## Captures d'écran
 
-```sh
-npm run dev
-```
+[Ajouter 2 ou 3 images dans un dossier `docs/` et les afficher ici]
 
-### Compile and Minify for Production
+## Auteur
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Donat Tsiry, étudiant à l'École nationale d'informatique (Madagascar)
+GitHub : [@donat-tsiry](https://github.com/donat-tsiry)
