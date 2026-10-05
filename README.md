@@ -46,7 +46,7 @@ Frontend en Vue 3, API REST en PHP, base de données MySQL.
 
 3. Créer la base de données :
    - ouvrir `http://localhost/phpmyadmin` ;
-   - importer le fichier `database.sql`.
+   - importer le fichier `etudiant.sql`.
 
 4. Copier le dossier `etudiant-api` dans `C:\xampp\htdocs\`.
 
