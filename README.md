@@ -15,7 +15,7 @@ Frontend en Vue 3, API REST en PHP, base de données MySQL.
 |--------|-------------|
 | Frontend | Vue 3, Vite |
 | Backend | PHP (dossier `etudiant-api`) |
-| Base de données | MySQL |
+| SGBD | MySQL |
 | Qualité du code | ESLint, Prettier |
 
 ## Structure du projet
