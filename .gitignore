@@ -40,4 +40,5 @@ __screenshots__/
 .kilo/
 .vscode/
 desktop.ini
-*.log
+*.log"desktop.ini" 
+"desktop.ini" 
